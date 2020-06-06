@@ -6,11 +6,15 @@ import android.graphics.RectF;
 import android.media.Image;
 import android.media.ImageReader;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
+import android.util.Log;
 import android.util.Size;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
+
+import org.json.JSONArray;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -27,10 +31,11 @@ import ai.fritz.vision.poseestimation.HumanSkeleton;
 import ai.fritz.vision.poseestimation.Keypoint;
 import ai.fritz.vision.poseestimation.Pose;
 import ai.fritz.vision.poseestimation.PoseOnDeviceModel;
+import ai.fritz.vision.poseestimation.PoseDecoder;
+import ai.fritz.vision.poseestimation.Skeleton;
 
-// testing testing testing
 
-public class MainActivity extends BaseCameraActivity implements ImageReader.OnImageAvailableListener {
+public class MainActivity<guard> extends BaseCameraActivity implements ImageReader.OnImageAvailableListener {
 
     private static final Size DESIRED_PREVIEW_SIZE = new Size(1280, 960);
 
@@ -102,16 +107,78 @@ public class MainActivity extends BaseCameraActivity implements ImageReader.OnIm
         });
         setCallback(canvas -> {
             if (poseResult != null) {
-                for (Pose pose : poseResult.getPoses()) {
+
+                //String num_key_string = String.valueOf(0x3f2);
+               // for (int i = 0; i < 10; i++ ) {
+                //    Log.d("DEBUGGING", num_key_string);
+                //}
+                for (Pose pose : poseResult.getPoses() ) {
+
+                    /*
+                    Skeleton skeleton = pose.getSkeleton();
+                    int num_key = skeleton.getNumKeypoints();
+                    String num_key_string = String.valueOf(num_key);
+                    for (int i = 0; i < 10; i++ ) {
+                        Log.d("DEBUGGING", num_key_string);
+                    }
+                    */
+                    // draw the skeleton, do not delete lol
                     pose.draw(canvas);
 
-                    Pose pose1 = poseResult.getPoses().get(0);
+                    // Get height and width of screen
+                    DisplayMetrics displayMetrics = new DisplayMetrics();
+                    getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+                    int height = displayMetrics.heightPixels; // returns a float representing a pixel value
+                    int width = displayMetrics.widthPixels;  //
 
-                    Keypoint[] keypoints = pose1.getKeypoints();
+                    // the following line draws a line from the top left of screen to bottom right
+                    canvas.drawLine(0, 0, width, height, DrawingUtils.DEFAULT_PAINT );
 
-                    PointF keypointPoisition = keypoints[5].getPosition();
-                    canvas.drawLine(keypointPoisition.x, keypointPoisition.y, keypointPoisition.x-10, keypointPoisition.y, DrawingUtils.DEFAULT_PAINT);
+                    // Retrieve the array of keypoints
+                    Keypoint[] example_keypoints = pose.getKeypoints();
+
+                    // Lets play around with two keypoints and try to draw from one, to the other
+                    Keypoint ex_leftwrist = example_keypoints[9];
+                    PointF ex_position = ex_leftwrist.getPosition();
+                    float pos_x = ex_position.x; //  x position needs to be float to draw
+                    float pos_y = ex_position.y; //  y position needs to be float to draw
+
+                    // second keypoint, repeating process
+                    Keypoint ex_lefteye = example_keypoints[1];
+                    PointF ex_position2 = ex_lefteye.getPosition();
+                    float pos_x2 = ex_position2.x;
+                    float pos_y2 = ex_position2.y;
+
+                    // Draw from one keypoint to the other
+                    canvas.drawLine(pos_x, pos_y, pos_x2, pos_y2, DrawingUtils.DEFAULT_PAINT );
+
+                    // Print some of the keypoint properties to console
+                    //String xpos = String.valueOf(pos_x);
+                    //String ypos = String.valueOf(pos_y);
+                    //Log.d("DEBUGGING", ex_name);
+                    //Log.d("Position x: ", xpos);
+                    //Log.d("Position y:", ypos);
+
+
+
+
+//////////////////////// BELOW IS OLD OLD OLD CODE //////////////////////////////////////////
+
+                    //Pose pose1 = (Pose) poseResult.getPoses();
+                    //Keypoint[] keypoints = pose1.getKeypoints();
+                    //canvas.drawLine(pose.getKeypoints()[0].getPosition().x, pose.getKeypoints()[0].getPosition().y, pose.getKeypoints()[0].getPosition().x-100 ,pose.getKeypoints()[0].getPosition().y-100, DrawingUtils.DEFAULT_PAINT );
+
+                    //Pose pose1 = poseResult.getPoses().get(0);
+                    //Keypoint[] keypoints = pose1.getKeypoints();
+                    //Keypoint[] keypoints = poseResult.getPoses(0).getKeypoints();
+                    //PointF keypointPoisition = keypoints[0].getPosition();
+                    //canvas.drawLine(keypointPoisition.x, keypointPoisition.y, keypointPoisition.x, keypointPoisition.y, DrawingUtils.DEFAULT_PAINT);
+
+
                 }
+
+
+
             }
             isComputing.set(false);
 
@@ -222,7 +289,7 @@ public class MainActivity extends BaseCameraActivity implements ImageReader.OnIm
         image.close();
 
         runInBackground(() -> {
-            poseResult = predictor.predict(visionImage); // this returns a pose result with method List<Pose>
+            poseResult = predictor.predict(visionImage);
             requestRender();
         });
     }
