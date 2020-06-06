@@ -103,17 +103,18 @@ public class MainActivity extends BaseCameraActivity implements ImageReader.OnIm
             if (poseResult != null) {
                 for (Pose pose : poseResult.getPoses()) {
                     pose.draw(canvas);
+
+                    Pose pose1 = poseResult.getPoses().get(0);
+
+                    Keypoint[] keypoints = pose1.getKeypoints();
+
+                    PointF keypointPoisition = keypoints[5].getPosition();
+                    canvas.drawLine(keypointPoisition.x, keypointPoisition.y, keypointPoisition.x-10, keypointPoisition.y, DrawingUtils.DEFAULT_PAINT);
                 }
             }
             isComputing.set(false);
-            Pose pose = poseResult.getPoses().get(0);
 
-// Get the body keypoints
-            Keypoint[] keypoints = pose.getKeypoints();
 
-// Get the name of the keypoint
-            PointF keypointPoisition = keypoints[5].getPosition();
-            canvas.drawLine(keypointPoisition.x, keypointPoisition.y, keypointPoisition.x-10, keypointPoisition.y, DrawingUtils.DEFAULT_PAINT);
 
 
         });
