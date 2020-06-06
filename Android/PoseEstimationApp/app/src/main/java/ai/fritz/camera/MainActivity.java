@@ -1,6 +1,7 @@
 package ai.fritz.camera;
 
 import android.graphics.Bitmap;
+import android.graphics.PointF;
 import android.graphics.RectF;
 import android.media.Image;
 import android.media.ImageReader;
@@ -17,13 +18,13 @@ import ai.fritz.core.Fritz;
 import ai.fritz.poseestimationdemo.R;
 import ai.fritz.vision.FritzVision;
 import ai.fritz.vision.FritzVisionImage;
-import ai.fritz.vision.FritzVisionModels;
 import ai.fritz.vision.FritzVisionOrientation;
 import ai.fritz.vision.ImageOrientation;
-import ai.fritz.vision.ModelVariant;
+import ai.fritz.vision.base.DrawingUtils;
 import ai.fritz.vision.poseestimation.FritzVisionPosePredictor;
 import ai.fritz.vision.poseestimation.FritzVisionPoseResult;
 import ai.fritz.vision.poseestimation.HumanSkeleton;
+import ai.fritz.vision.poseestimation.Keypoint;
 import ai.fritz.vision.poseestimation.Pose;
 import ai.fritz.vision.poseestimation.PoseOnDeviceModel;
 
@@ -46,18 +47,12 @@ public class MainActivity extends BaseCameraActivity implements ImageReader.OnIm
     Button snapshotButton;
     ProgressBar snapshotProcessingSpinner;
 
-
     // Snapshot Frame
     RelativeLayout snapshotFrame;
-    RelativeLayout switchFrame; // added a frame while switching
     OverlayView snapshotOverlay;
-    OverlayView switchOverlay;  // added an overview while switching
     Button closeButton;
     Button recordButton;
-    Button switchButton;  // added switch camera views
     ProgressBar recordSpinner;
-
-
 
 
     @Override
@@ -109,9 +104,20 @@ public class MainActivity extends BaseCameraActivity implements ImageReader.OnIm
             if (poseResult != null) {
                 for (Pose pose : poseResult.getPoses()) {
                     pose.draw(canvas);
+
+                    Pose pose1 = poseResult.getPoses().get(0);
+
+                    Keypoint[] keypoints = pose1.getKeypoints();
+
+                    PointF keypointPoisition = keypoints[5].getPosition();
+                    canvas.drawLine(keypointPoisition.x, keypointPoisition.y, keypointPoisition.x-10, keypointPoisition.y, DrawingUtils.DEFAULT_PAINT);
                 }
             }
             isComputing.set(false);
+
+
+
+
         });
 
         // Snapshot View
@@ -151,8 +157,6 @@ public class MainActivity extends BaseCameraActivity implements ImageReader.OnIm
                 switchPreviewView();
             }
         });
-
-
 
     }
 
