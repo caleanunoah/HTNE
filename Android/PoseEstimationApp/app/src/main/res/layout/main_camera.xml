@@ -13,20 +13,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentTop="true" />
-
         <ai.fritz.camera.OverlayView
             android:id="@+id/debug_overlay"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="1dp" />
-
-        <Switch
-            android:id="@+id/switch1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Switch" />
-
+            android:layout_alignParentTop="true"/>
     </RelativeLayout>
 
     <include layout="@layout/snapshot_button" />
