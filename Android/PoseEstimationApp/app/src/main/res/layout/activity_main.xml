@@ -1,0 +1,22 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/camera_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="-42dp" >
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="match_parent"
+            android:layout_height="902dp"
+            android:ems="15"
+            android:inputType="textPersonName"
+            android:text="@string/HelloWorld"
+            android:visibility="visible" />
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

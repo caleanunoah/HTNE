@@ -1,0 +1,43 @@
+PODS:
+  - Fritz (5.3.0):
+    - Fritz/Vision (= 5.3.0)
+  - Fritz/Vision (5.3.0):
+    - FritzBase/Vision (= 5.3.0)
+  - Fritz/VisionObjectModel/Fast (5.3.0):
+    - FritzVisionObjectModelFast (~> 5.3.0)
+  - Fritz/VisionPoseModel/Human/Fast (5.3.0):
+    - FritzVisionHumanPoseModelFast (~> 5.3.0)
+  - FritzBase/Core (5.3.0)
+  - FritzBase/CoreMLHelpers (5.3.0)
+  - FritzBase/ManagedModel (5.3.0):
+    - FritzBase/Core (= 5.3.0)
+  - FritzBase/Vision (5.3.0):
+    - FritzBase/Core (= 5.3.0)
+    - FritzBase/CoreMLHelpers (= 5.3.0)
+    - FritzBase/ManagedModel (= 5.3.0)
+  - FritzVisionHumanPoseModelFast (5.3.0):
+    - FritzBase/Vision (~> 5.3.0)
+  - FritzVisionObjectModelFast (5.3.0):
+    - FritzBase/Vision (~> 5.3.0)
+
+DEPENDENCIES:
+  - Fritz (~> 5.3.0)
+  - Fritz/VisionObjectModel/Fast
+  - Fritz/VisionPoseModel/Human/Fast
+
+SPEC REPOS:
+  trunk:
+    - Fritz
+    - FritzBase
+    - FritzVisionHumanPoseModelFast
+    - FritzVisionObjectModelFast
+
+SPEC CHECKSUMS:
+  Fritz: 9f13fccd5bc7fc08a64d8bf79764c221e9d38cfe
+  FritzBase: aedffaeb45d5c09ccf66d7d4ad4e8d578072c3de
+  FritzVisionHumanPoseModelFast: e629ea585967bd327e337245d38573a5ad0033af
+  FritzVisionObjectModelFast: 98ef876b4fb55359dcff6125b35af44a9fdd3633
+
+PODFILE CHECKSUM: 0aa24e9293524a520e7622559e13a4454f757ea8
+
+COCOAPODS: 1.9.1

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bXN-2g-eap">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image Labeling-->
+        <scene sceneID="gga-fV-gqh">
+            <objects>
+                <viewController id="bXN-2g-eap" userLabel="Image Labeling" customClass="ViewController" customModule="FritzImageLabelingDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DTw-l1-0kj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOI-62-OJZ" userLabel="Model Version Label">
+                                <rect key="frame" x="0.0" y="595" width="377" height="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ym-Xz-hjF" userLabel="Model ID Label">
+                                <rect key="frame" x="0.0" y="618" width="377" height="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2CS-If-s4d" userLabel="FPS Label">
+                                <rect key="frame" x="88" y="641" width="200" height="15.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onp-ok-7O5">
+                                <rect key="frame" x="47" y="86" width="280" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNJ-ef-VJT" userLabel="Confidence">
+                                <rect key="frame" x="169.5" y="127" width="33" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7ym-Xz-hjF" firstAttribute="leading" secondItem="2CS-If-s4d" secondAttribute="leading" id="2jA-7n-H7f"/>
+                            <constraint firstItem="XOI-62-OJZ" firstAttribute="centerX" secondItem="7ym-Xz-hjF" secondAttribute="centerX" id="7PA-r8-ubr"/>
+                            <constraint firstItem="XOI-62-OJZ" firstAttribute="centerX" secondItem="DTw-l1-0kj" secondAttribute="centerX" id="96p-ZT-MSS"/>
+                            <constraint firstItem="rNJ-ef-VJT" firstAttribute="top" secondItem="onp-ok-7O5" secondAttribute="bottom" constant="8" id="HK8-yQ-AGD"/>
+                            <constraint firstItem="onp-ok-7O5" firstAttribute="centerX" secondItem="XOI-62-OJZ" secondAttribute="centerX" constant="-1.5" id="Lhz-xE-Kzu"/>
+                            <constraint firstItem="XOI-62-OJZ" firstAttribute="top" secondItem="CgA-h6-NiT" secondAttribute="top" constant="551" id="OLh-lr-EBf"/>
+                            <constraint firstItem="onp-ok-7O5" firstAttribute="leading" secondItem="CgA-h6-NiT" secondAttribute="leading" constant="47" id="V8S-RG-YXR"/>
+                            <constraint firstItem="XOI-62-OJZ" firstAttribute="leading" secondItem="CgA-h6-NiT" secondAttribute="leading" id="ayJ-DJ-ZIk"/>
+                            <constraint firstItem="onp-ok-7O5" firstAttribute="top" secondItem="CgA-h6-NiT" secondAttribute="top" constant="42" id="d8k-vq-ibk"/>
+                            <constraint firstItem="2CS-If-s4d" firstAttribute="top" secondItem="7ym-Xz-hjF" secondAttribute="bottom" constant="8" id="hzG-gT-3qI"/>
+                            <constraint firstItem="7ym-Xz-hjF" firstAttribute="top" secondItem="XOI-62-OJZ" secondAttribute="bottom" constant="8" id="j0W-WU-A8M"/>
+                            <constraint firstItem="7ym-Xz-hjF" firstAttribute="trailing" secondItem="2CS-If-s4d" secondAttribute="trailing" id="m1R-Jm-BoQ"/>
+                            <constraint firstItem="7ym-Xz-hjF" firstAttribute="leading" secondItem="CgA-h6-NiT" secondAttribute="leading" id="t9z-e3-fYl"/>
+                            <constraint firstItem="onp-ok-7O5" firstAttribute="centerX" secondItem="rNJ-ef-VJT" secondAttribute="centerX" id="u6t-jQ-W9U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CgA-h6-NiT"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="LABEL IMAGES" id="vW0-XC-6S1" userLabel="LABEL IMAGES"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="cameraView" destination="DTw-l1-0kj" id="dCi-70-bYu"/>
+                        <outlet property="confidenceLabel" destination="rNJ-ef-VJT" id="LeE-HY-2xj"/>
+                        <outlet property="fpsLabel" destination="2CS-If-s4d" id="LIz-l8-ftX"/>
+                        <outlet property="modelIdLabel" destination="7ym-Xz-hjF" id="Lya-8E-cgA"/>
+                        <outlet property="modelVersionLabel" destination="XOI-62-OJZ" id="vID-DU-bFc"/>
+                        <outlet property="predictionLabel" destination="onp-ok-7O5" id="82f-GN-LO1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pm4-ZZ-n7f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16.800000000000001" y="62.518740629685162"/>
+        </scene>
+    </scenes>
+</document>

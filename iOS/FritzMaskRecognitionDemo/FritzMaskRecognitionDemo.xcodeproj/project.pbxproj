@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		457E45E52447915E001FE3E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457E45DB2447915E001FE3E2 /* ViewController.swift */; };
+		457E45E72447915E001FE3E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 457E45DD2447915E001FE3E2 /* Assets.xcassets */; };
+		457E45E82447915E001FE3E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457E45DE2447915E001FE3E2 /* LaunchScreen.storyboard */; };
+		457E45E92447915E001FE3E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457E45E02447915E001FE3E2 /* Main.storyboard */; };
+		457E45EA2447915E001FE3E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457E45E22447915E001FE3E2 /* AppDelegate.swift */; };
+		457E45EF24479B7B001FE3E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457E45E42447915E001FE3E2 /* SceneDelegate.swift */; };
+		45F2C724247D6C8A00D96754 /* MaskRecognition.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 45F2C723247D6C8A00D96754 /* MaskRecognition.mlmodel */; };
+		69156451740E575356F8C91A /* Pods_FritzMaskRecognitionDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD1FBA3EA00ADFDF4A88554 /* Pods_FritzMaskRecognitionDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B3BCBFA2360AE3600898CF5 /* FritzMaskRecognitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FritzMaskRecognitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		457E45DB2447915E001FE3E2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		457E45DD2447915E001FE3E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		457E45DF2447915E001FE3E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		457E45E12447915E001FE3E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		457E45E22447915E001FE3E2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		457E45E32447915E001FE3E2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		457E45E42447915E001FE3E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		45F2C723247D6C8A00D96754 /* MaskRecognition.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MaskRecognition.mlmodel; sourceTree = "<group>"; };
+		74684289D7E74482826FF46C /* Pods-FritzMaskRecognitionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzMaskRecognitionDemo.release.xcconfig"; path = "Target Support Files/Pods-FritzMaskRecognitionDemo/Pods-FritzMaskRecognitionDemo.release.xcconfig"; sourceTree = "<group>"; };
+		9CAF5A0FC63D224A299B03EB /* Pods-FritzMaskRecognitionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzMaskRecognitionDemo.debug.xcconfig"; path = "Target Support Files/Pods-FritzMaskRecognitionDemo/Pods-FritzMaskRecognitionDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		EFD1FBA3EA00ADFDF4A88554 /* Pods_FritzMaskRecognitionDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FritzMaskRecognitionDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B3BCBF72360AE3600898CF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69156451740E575356F8C91A /* Pods_FritzMaskRecognitionDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B3BCBF12360AE3600898CF5 = {
+			isa = PBXGroup;
+			children = (
+				457E45DA2447915E001FE3E2 /* FritzMaskRecognitionDemo */,
+				3B3BCBFB2360AE3600898CF5 /* Products */,
+				C4BF6B27527268175F03B925 /* Pods */,
+				ACF443D621D08CB260B4484B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B3BCBFB2360AE3600898CF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B3BCBFA2360AE3600898CF5 /* FritzMaskRecognitionDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		457E45DA2447915E001FE3E2 /* FritzMaskRecognitionDemo */ = {
+			isa = PBXGroup;
+			children = (
+				457E45DB2447915E001FE3E2 /* ViewController.swift */,
+				457E45DD2447915E001FE3E2 /* Assets.xcassets */,
+				45F2C723247D6C8A00D96754 /* MaskRecognition.mlmodel */,
+				457E45DE2447915E001FE3E2 /* LaunchScreen.storyboard */,
+				457E45E02447915E001FE3E2 /* Main.storyboard */,
+				457E45E22447915E001FE3E2 /* AppDelegate.swift */,
+				457E45E32447915E001FE3E2 /* Info.plist */,
+				457E45E42447915E001FE3E2 /* SceneDelegate.swift */,
+			);
+			path = FritzMaskRecognitionDemo;
+			sourceTree = "<group>";
+		};
+		ACF443D621D08CB260B4484B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFD1FBA3EA00ADFDF4A88554 /* Pods_FritzMaskRecognitionDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4BF6B27527268175F03B925 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CAF5A0FC63D224A299B03EB /* Pods-FritzMaskRecognitionDemo.debug.xcconfig */,
+				74684289D7E74482826FF46C /* Pods-FritzMaskRecognitionDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B3BCBF92360AE3600898CF5 /* FritzMaskRecognitionDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B3BCC0E2360AE3700898CF5 /* Build configuration list for PBXNativeTarget "FritzMaskRecognitionDemo" */;
+			buildPhases = (
+				554D1B8F542BE86B6837BAE4 /* [CP] Check Pods Manifest.lock */,
+				3B3BCBF62360AE3600898CF5 /* Sources */,
+				3B3BCBF72360AE3600898CF5 /* Frameworks */,
+				3B3BCBF82360AE3600898CF5 /* Resources */,
+				E87B85420963AC4B34B5AD65 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FritzMaskRecognitionDemo;
+			productName = FritzObjectDetectionDemo;
+			productReference = 3B3BCBFA2360AE3600898CF5 /* FritzMaskRecognitionDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B3BCBF22360AE3600898CF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Fritz AI";
+				TargetAttributes = {
+					3B3BCBF92360AE3600898CF5 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 3B3BCBF52360AE3600898CF5 /* Build configuration list for PBXProject "FritzObjectDetectionDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B3BCBF12360AE3600898CF5;
+			productRefGroup = 3B3BCBFB2360AE3600898CF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B3BCBF92360AE3600898CF5 /* FritzMaskRecognitionDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B3BCBF82360AE3600898CF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457E45E82447915E001FE3E2 /* LaunchScreen.storyboard in Resources */,
+				457E45E72447915E001FE3E2 /* Assets.xcassets in Resources */,
+				457E45E92447915E001FE3E2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		554D1B8F542BE86B6837BAE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FritzMaskRecognitionDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E87B85420963AC4B34B5AD65 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FritzMaskRecognitionDemo/Pods-FritzMaskRecognitionDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FritzMaskRecognitionDemo/Pods-FritzMaskRecognitionDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FritzMaskRecognitionDemo/Pods-FritzMaskRecognitionDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B3BCBF62360AE3600898CF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45F2C724247D6C8A00D96754 /* MaskRecognition.mlmodel in Sources */,
+				457E45EF24479B7B001FE3E2 /* SceneDelegate.swift in Sources */,
+				457E45EA2447915E001FE3E2 /* AppDelegate.swift in Sources */,
+				457E45E52447915E001FE3E2 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		457E45DE2447915E001FE3E2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				457E45DF2447915E001FE3E2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		457E45E02447915E001FE3E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				457E45E12447915E001FE3E2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B3BCC0C2360AE3700898CF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B3BCC0D2360AE3700898CF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B3BCC0F2360AE3700898CF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CAF5A0FC63D224A299B03EB /* Pods-FritzMaskRecognitionDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/FritzMaskRecognitionDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.fritz.MaskRecognitionDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B3BCC102360AE3700898CF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74684289D7E74482826FF46C /* Pods-FritzMaskRecognitionDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/FritzMaskRecognitionDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.fritz.MaskRecognitionDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B3BCBF52360AE3600898CF5 /* Build configuration list for PBXProject "FritzObjectDetectionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B3BCC0C2360AE3700898CF5 /* Debug */,
+				3B3BCC0D2360AE3700898CF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B3BCC0E2360AE3700898CF5 /* Build configuration list for PBXNativeTarget "FritzMaskRecognitionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B3BCC0F2360AE3700898CF5 /* Debug */,
+				3B3BCC102360AE3700898CF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B3BCBF22360AE3600898CF5 /* Project object */;
+}

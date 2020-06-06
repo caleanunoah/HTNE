@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B07C02C2378779C000E5C63 /* VideoOptionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B07C02B2378779C000E5C63 /* VideoOptionStrategy.swift */; };
+		3B07C02E2378F7AD000E5C63 /* DoubleStyleStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B07C02D2378F7AD000E5C63 /* DoubleStyleStrategy.swift */; };
+		3B07C03223790089000E5C63 /* PoseDoubleMaskStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B07C03123790089000E5C63 /* PoseDoubleMaskStrategy.swift */; };
+		3B17B79D23849CE900869AA8 /* StylizeBackgroundStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17B79C23849CE900869AA8 /* StylizeBackgroundStrategy.swift */; };
+		3B2395A023760528008E5A89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B23959F23760528008E5A89 /* AppDelegate.swift */; };
+		3B2395A223760528008E5A89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2395A123760528008E5A89 /* SceneDelegate.swift */; };
+		3B2395A423760528008E5A89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2395A323760528008E5A89 /* ViewController.swift */; };
+		3B2395A92376052A008E5A89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B2395A82376052A008E5A89 /* Assets.xcassets */; };
+		3B2395B7237605FD008E5A89 /* LinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2395B4237605FC008E5A89 /* LinkTableViewCell.swift */; };
+		3B2395B8237605FD008E5A89 /* DemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2395B5237605FC008E5A89 /* DemoTableViewCell.swift */; };
+		3B2395B9237605FD008E5A89 /* VideoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2395B6237605FC008E5A89 /* VideoPicker.swift */; };
+		3B2395BC2376063A008E5A89 /* StylizeHairStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2395BB2376063A008E5A89 /* StylizeHairStrategy.swift */; };
+		3B2395BE23760765008E5A89 /* SingleScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2395BD23760765008E5A89 /* SingleScreenViewController.swift */; };
+		3B2395C02376093B008E5A89 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2395BF2376093B008E5A89 /* NavigationController.swift */; };
+		3B2395C2237610E6008E5A89 /* StylizeHairMaskFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2395C1237610E6008E5A89 /* StylizeHairMaskFilter.swift */; };
+		3B2395CB23761D84008E5A89 /* SingleScreenStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B2395CA23761D84008E5A89 /* SingleScreenStoryboard.storyboard */; };
+		3B44CF052379052C00A96408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B44CF032379052C00A96408 /* LaunchScreen.storyboard */; };
+		3B44CF062379052C00A96408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B44CF042379052C00A96408 /* Main.storyboard */; };
+		3B44CF082379B91500A96408 /* SplitScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B44CF072379B91500A96408 /* SplitScreenViewController.swift */; };
+		3B44CF0A2379BB9800A96408 /* SplitScreenStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B44CF092379BB9800A96408 /* SplitScreenStoryboard.storyboard */; };
+		3B44CF0E2379C1D100A96408 /* FemmesStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B44CF0D2379C1D100A96408 /* FemmesStrategy.swift */; };
+		3B44CF102379C20700A96408 /* ScreamStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B44CF0F2379C20700A96408 /* ScreamStrategy.swift */; };
+		3B8CED98237B4B9A004F9E38 /* StyleOptionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8CED97237B4B9A004F9E38 /* StyleOptionStrategy.swift */; };
+		3BC5DC2F237626180018FA5A /* ObjectPoseStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC5DC2E237626180018FA5A /* ObjectPoseStrategy.swift */; };
+		E7B2939D7554BF9F96FF2A45 /* Pods_FritzVisionVideoDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B08A7DB1BFA0EC3AB62A3056 /* Pods_FritzVisionVideoDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B07C02B2378779C000E5C63 /* VideoOptionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoOptionStrategy.swift; sourceTree = "<group>"; };
+		3B07C02D2378F7AD000E5C63 /* DoubleStyleStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleStyleStrategy.swift; sourceTree = "<group>"; };
+		3B07C03123790089000E5C63 /* PoseDoubleMaskStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseDoubleMaskStrategy.swift; sourceTree = "<group>"; };
+		3B17B79C23849CE900869AA8 /* StylizeBackgroundStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylizeBackgroundStrategy.swift; sourceTree = "<group>"; };
+		3B23959C23760528008E5A89 /* FritzVisionVideoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FritzVisionVideoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B23959F23760528008E5A89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B2395A123760528008E5A89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3B2395A323760528008E5A89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B2395A82376052A008E5A89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B2395AD2376052A008E5A89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B2395B4237605FC008E5A89 /* LinkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinkTableViewCell.swift; path = ../../../FritzHairColorDemo/FritzHairColorDemo/UI/LinkTableViewCell.swift; sourceTree = "<group>"; };
+		3B2395B5237605FC008E5A89 /* DemoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemoTableViewCell.swift; path = ../../../FritzHairColorDemo/FritzHairColorDemo/UI/DemoTableViewCell.swift; sourceTree = "<group>"; };
+		3B2395B6237605FC008E5A89 /* VideoPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoPicker.swift; path = ../../../FritzHairColorDemo/FritzHairColorDemo/UI/VideoPicker.swift; sourceTree = "<group>"; };
+		3B2395BB2376063A008E5A89 /* StylizeHairStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylizeHairStrategy.swift; sourceTree = "<group>"; };
+		3B2395BD23760765008E5A89 /* SingleScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleScreenViewController.swift; sourceTree = "<group>"; };
+		3B2395BF2376093B008E5A89 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		3B2395C1237610E6008E5A89 /* StylizeHairMaskFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylizeHairMaskFilter.swift; sourceTree = "<group>"; };
+		3B2395CA23761D84008E5A89 /* SingleScreenStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingleScreenStoryboard.storyboard; sourceTree = "<group>"; };
+		3B44CF032379052C00A96408 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B44CF042379052C00A96408 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3B44CF072379B91500A96408 /* SplitScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitScreenViewController.swift; sourceTree = "<group>"; };
+		3B44CF092379BB9800A96408 /* SplitScreenStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplitScreenStoryboard.storyboard; sourceTree = "<group>"; };
+		3B44CF0D2379C1D100A96408 /* FemmesStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FemmesStrategy.swift; sourceTree = "<group>"; };
+		3B44CF0F2379C20700A96408 /* ScreamStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreamStrategy.swift; sourceTree = "<group>"; };
+		3B8CED97237B4B9A004F9E38 /* StyleOptionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleOptionStrategy.swift; sourceTree = "<group>"; };
+		3BC5DC2E237626180018FA5A /* ObjectPoseStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectPoseStrategy.swift; sourceTree = "<group>"; };
+		3FA1C947D1C12AF0F4E8E46F /* Pods-FritzVisionVideoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzVisionVideoDemo.debug.xcconfig"; path = "Target Support Files/Pods-FritzVisionVideoDemo/Pods-FritzVisionVideoDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B08A7DB1BFA0EC3AB62A3056 /* Pods_FritzVisionVideoDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FritzVisionVideoDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE6642EEC50958FE85C81047 /* Pods-FritzVisionVideoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzVisionVideoDemo.release.xcconfig"; path = "Target Support Files/Pods-FritzVisionVideoDemo/Pods-FritzVisionVideoDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B23959923760528008E5A89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7B2939D7554BF9F96FF2A45 /* Pods_FritzVisionVideoDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E1A2C1740D460757C9502A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FA1C947D1C12AF0F4E8E46F /* Pods-FritzVisionVideoDemo.debug.xcconfig */,
+				DE6642EEC50958FE85C81047 /* Pods-FritzVisionVideoDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3B23959323760528008E5A89 = {
+			isa = PBXGroup;
+			children = (
+				3B23959E23760528008E5A89 /* FritzVisionVideoDemo */,
+				3B23959D23760528008E5A89 /* Products */,
+				2E1A2C1740D460757C9502A3 /* Pods */,
+				95D892482B994F057018E4E4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B23959D23760528008E5A89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B23959C23760528008E5A89 /* FritzVisionVideoDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B23959E23760528008E5A89 /* FritzVisionVideoDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3B2395C923761D48008E5A89 /* Storyboards */,
+				3B2395BA23760614008E5A89 /* Controllers */,
+				3B2395B3237605DF008E5A89 /* Utils */,
+				3B23959F23760528008E5A89 /* AppDelegate.swift */,
+				3B2395A123760528008E5A89 /* SceneDelegate.swift */,
+				3B2395A82376052A008E5A89 /* Assets.xcassets */,
+				3B2395AD2376052A008E5A89 /* Info.plist */,
+			);
+			path = FritzVisionVideoDemo;
+			sourceTree = "<group>";
+		};
+		3B2395B3237605DF008E5A89 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3B2395B5237605FC008E5A89 /* DemoTableViewCell.swift */,
+				3B2395B4237605FC008E5A89 /* LinkTableViewCell.swift */,
+				3B2395B6237605FC008E5A89 /* VideoPicker.swift */,
+				3B2395C1237610E6008E5A89 /* StylizeHairMaskFilter.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3B2395BA23760614008E5A89 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3BC5DC302376917F0018FA5A /* Strategies */,
+				3B2395BD23760765008E5A89 /* SingleScreenViewController.swift */,
+				3B44CF072379B91500A96408 /* SplitScreenViewController.swift */,
+				3B2395A323760528008E5A89 /* ViewController.swift */,
+				3B2395BF2376093B008E5A89 /* NavigationController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3B2395C923761D48008E5A89 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3B44CF032379052C00A96408 /* LaunchScreen.storyboard */,
+				3B44CF042379052C00A96408 /* Main.storyboard */,
+				3B2395CA23761D84008E5A89 /* SingleScreenStoryboard.storyboard */,
+				3B44CF092379BB9800A96408 /* SplitScreenStoryboard.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3BC5DC302376917F0018FA5A /* Strategies */ = {
+			isa = PBXGroup;
+			children = (
+				3B07C02B2378779C000E5C63 /* VideoOptionStrategy.swift */,
+				3B8CED97237B4B9A004F9E38 /* StyleOptionStrategy.swift */,
+				3B2395BB2376063A008E5A89 /* StylizeHairStrategy.swift */,
+				3B17B79C23849CE900869AA8 /* StylizeBackgroundStrategy.swift */,
+				3BC5DC2E237626180018FA5A /* ObjectPoseStrategy.swift */,
+				3B07C03123790089000E5C63 /* PoseDoubleMaskStrategy.swift */,
+				3B07C02D2378F7AD000E5C63 /* DoubleStyleStrategy.swift */,
+				3B44CF0D2379C1D100A96408 /* FemmesStrategy.swift */,
+				3B44CF0F2379C20700A96408 /* ScreamStrategy.swift */,
+			);
+			path = Strategies;
+			sourceTree = "<group>";
+		};
+		95D892482B994F057018E4E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B08A7DB1BFA0EC3AB62A3056 /* Pods_FritzVisionVideoDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B23959B23760528008E5A89 /* FritzVisionVideoDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B2395B02376052A008E5A89 /* Build configuration list for PBXNativeTarget "FritzVisionVideoDemo" */;
+			buildPhases = (
+				AE3D6FE9F572EAE150B201BE /* [CP] Check Pods Manifest.lock */,
+				3B23959823760528008E5A89 /* Sources */,
+				3B23959923760528008E5A89 /* Frameworks */,
+				3B23959A23760528008E5A89 /* Resources */,
+				96F28801FC0697D4F454F6CF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FritzVisionVideoDemo;
+			productName = FritzVisionVideoDemo;
+			productReference = 3B23959C23760528008E5A89 /* FritzVisionVideoDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B23959423760528008E5A89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Fritz;
+				TargetAttributes = {
+					3B23959B23760528008E5A89 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = 3B23959723760528008E5A89 /* Build configuration list for PBXProject "FritzVisionVideoDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B23959323760528008E5A89;
+			productRefGroup = 3B23959D23760528008E5A89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B23959B23760528008E5A89 /* FritzVisionVideoDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B23959A23760528008E5A89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B44CF0A2379BB9800A96408 /* SplitScreenStoryboard.storyboard in Resources */,
+				3B2395A92376052A008E5A89 /* Assets.xcassets in Resources */,
+				3B44CF062379052C00A96408 /* Main.storyboard in Resources */,
+				3B44CF052379052C00A96408 /* LaunchScreen.storyboard in Resources */,
+				3B2395CB23761D84008E5A89 /* SingleScreenStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		96F28801FC0697D4F454F6CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FritzVisionVideoDemo/Pods-FritzVisionVideoDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FritzVisionVideoDemo/Pods-FritzVisionVideoDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FritzVisionVideoDemo/Pods-FritzVisionVideoDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE3D6FE9F572EAE150B201BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FritzVisionVideoDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B23959823760528008E5A89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC5DC2F237626180018FA5A /* ObjectPoseStrategy.swift in Sources */,
+				3B2395A423760528008E5A89 /* ViewController.swift in Sources */,
+				3B2395A023760528008E5A89 /* AppDelegate.swift in Sources */,
+				3B2395BE23760765008E5A89 /* SingleScreenViewController.swift in Sources */,
+				3B2395A223760528008E5A89 /* SceneDelegate.swift in Sources */,
+				3B2395C02376093B008E5A89 /* NavigationController.swift in Sources */,
+				3B2395BC2376063A008E5A89 /* StylizeHairStrategy.swift in Sources */,
+				3B2395C2237610E6008E5A89 /* StylizeHairMaskFilter.swift in Sources */,
+				3B8CED98237B4B9A004F9E38 /* StyleOptionStrategy.swift in Sources */,
+				3B07C02C2378779C000E5C63 /* VideoOptionStrategy.swift in Sources */,
+				3B44CF082379B91500A96408 /* SplitScreenViewController.swift in Sources */,
+				3B2395B9237605FD008E5A89 /* VideoPicker.swift in Sources */,
+				3B44CF0E2379C1D100A96408 /* FemmesStrategy.swift in Sources */,
+				3B2395B8237605FD008E5A89 /* DemoTableViewCell.swift in Sources */,
+				3B07C03223790089000E5C63 /* PoseDoubleMaskStrategy.swift in Sources */,
+				3B44CF102379C20700A96408 /* ScreamStrategy.swift in Sources */,
+				3B07C02E2378F7AD000E5C63 /* DoubleStyleStrategy.swift in Sources */,
+				3B17B79D23849CE900869AA8 /* StylizeBackgroundStrategy.swift in Sources */,
+				3B2395B7237605FD008E5A89 /* LinkTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3B2395AE2376052A008E5A89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B2395AF2376052A008E5A89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B2395B12376052A008E5A89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FA1C947D1C12AF0F4E8E46F /* Pods-FritzVisionVideoDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FritzVisionVideoDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.fritz.FritzVisionVideoDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B2395B22376052A008E5A89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE6642EEC50958FE85C81047 /* Pods-FritzVisionVideoDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FritzVisionVideoDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.fritz.FritzVisionVideoDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B23959723760528008E5A89 /* Build configuration list for PBXProject "FritzVisionVideoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B2395AE2376052A008E5A89 /* Debug */,
+				3B2395AF2376052A008E5A89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B2395B02376052A008E5A89 /* Build configuration list for PBXNativeTarget "FritzVisionVideoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B2395B12376052A008E5A89 /* Debug */,
+				3B2395B22376052A008E5A89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B23959423760528008E5A89 /* Project object */;
+}

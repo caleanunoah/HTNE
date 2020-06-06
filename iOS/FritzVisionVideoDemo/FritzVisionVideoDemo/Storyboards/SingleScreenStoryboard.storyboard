@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WXX-D2-m06">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Single Screen View Controller-->
+        <scene sceneID="YMA-Bt-Ajh">
+            <objects>
+                <viewController storyboardIdentifier="SingleScreen" id="WXX-D2-m06" customClass="SingleScreenViewController" customModule="FritzVisionVideoDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4YX-Yp-28u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exporting..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogn-nS-Edt">
+                                <rect key="frame" x="163" y="469" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="center" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="BAg-11-MEQ">
+                                <rect key="frame" x="107" y="444" width="200" height="9"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="JAN-86-r4y"/>
+                                    <constraint firstAttribute="height" constant="8" id="LNk-xM-WYN"/>
+                                </constraints>
+                                <color key="progressTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="trackTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ogn-nS-Edt" firstAttribute="centerX" secondItem="4YX-Yp-28u" secondAttribute="centerX" id="1Rz-Fe-TBm"/>
+                            <constraint firstItem="Ogn-nS-Edt" firstAttribute="top" secondItem="BAg-11-MEQ" secondAttribute="bottom" constant="17" id="Drd-Hk-t6Y"/>
+                            <constraint firstItem="BAg-11-MEQ" firstAttribute="centerY" secondItem="4YX-Yp-28u" secondAttribute="centerY" id="dOp-7s-dh8"/>
+                            <constraint firstItem="BAg-11-MEQ" firstAttribute="centerX" secondItem="4YX-Yp-28u" secondAttribute="centerX" id="tsL-tJ-PIB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jD1-4u-wX6"/>
+                    </view>
+                    <connections>
+                        <outlet property="exportLabel" destination="Ogn-nS-Edt" id="4rZ-Dh-mDJ"/>
+                        <outlet property="progressBar" destination="BAg-11-MEQ" id="ooj-B4-EWF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pqh-NI-shg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="133"/>
+        </scene>
+    </scenes>
+</document>

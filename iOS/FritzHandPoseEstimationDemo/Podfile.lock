@@ -1,0 +1,29 @@
+PODS:
+  - Fritz (5.3.0):
+    - Fritz/Vision (= 5.3.0)
+  - Fritz/Vision (5.3.0):
+    - FritzBase/Vision (= 5.3.0)
+  - FritzBase/Core (5.3.0)
+  - FritzBase/CoreMLHelpers (5.3.0)
+  - FritzBase/ManagedModel (5.3.0):
+    - FritzBase/Core (= 5.3.0)
+  - FritzBase/Vision (5.3.0):
+    - FritzBase/Core (= 5.3.0)
+    - FritzBase/CoreMLHelpers (= 5.3.0)
+    - FritzBase/ManagedModel (= 5.3.0)
+
+DEPENDENCIES:
+  - Fritz (~> 5.3.0)
+
+SPEC REPOS:
+  trunk:
+    - Fritz
+    - FritzBase
+
+SPEC CHECKSUMS:
+  Fritz: 9f13fccd5bc7fc08a64d8bf79764c221e9d38cfe
+  FritzBase: aedffaeb45d5c09ccf66d7d4ad4e8d578072c3de
+
+PODFILE CHECKSUM: fcf694ecf1318591887028ab6485d3bc7772dfa9
+
+COCOAPODS: 1.9.1

@@ -1,0 +1,23 @@
+
+platform :ios, '11.0'
+
+use_frameworks!
+inhibit_all_warnings!
+
+project 'FritzAIStudio.xcodeproj'
+
+target 'FritzAIStudio' do
+  pod 'Crashlytics', '~> 3.9'
+  pod 'Fabric', '~> 1.7'
+  pod 'ColorSlider', '~> 4.4'
+  pod 'Fritz', '~> 5.3.7'
+  pod 'Fritz/VisionObjectModel/Fast'
+  pod 'Fritz/VisionStyleModel/Paintings'
+  pod 'Fritz/VisionStyleModel/Patterns'
+  pod 'Fritz/VisionLabelModel/Fast'
+  pod 'Fritz/VisionSegmentationModel/People/Fast'
+  pod 'Fritz/VisionSegmentationModel/Hair/Fast'
+  pod 'Fritz/VisionPoseModel/Human/Fast'
+
+  pod 'R.swift', '5.0.0.alpha.2'
+end

@@ -1,0 +1,36 @@
+PODS:
+  - Fritz (5.3.0):
+    - Fritz/Vision (= 5.3.0)
+  - Fritz/Vision (5.3.0):
+    - FritzBase/Vision (= 5.3.0)
+  - Fritz/VisionSegmentationModel/Pet/Accurate (5.3.0):
+    - FritzVisionPetSegmentationModelAccurate (~> 5.3.0)
+  - FritzBase/Core (5.3.0)
+  - FritzBase/CoreMLHelpers (5.3.0)
+  - FritzBase/ManagedModel (5.3.0):
+    - FritzBase/Core (= 5.3.0)
+  - FritzBase/Vision (5.3.0):
+    - FritzBase/Core (= 5.3.0)
+    - FritzBase/CoreMLHelpers (= 5.3.0)
+    - FritzBase/ManagedModel (= 5.3.0)
+  - FritzVisionPetSegmentationModelAccurate (5.3.0):
+    - FritzBase/Vision (~> 5.3.0)
+
+DEPENDENCIES:
+  - Fritz (~> 5.3.0)
+  - Fritz/VisionSegmentationModel/Pet/Accurate
+
+SPEC REPOS:
+  trunk:
+    - Fritz
+    - FritzBase
+    - FritzVisionPetSegmentationModelAccurate
+
+SPEC CHECKSUMS:
+  Fritz: 9f13fccd5bc7fc08a64d8bf79764c221e9d38cfe
+  FritzBase: aedffaeb45d5c09ccf66d7d4ad4e8d578072c3de
+  FritzVisionPetSegmentationModelAccurate: 85654c47c9b90e11d79819ca93cd6cdcc9e39e85
+
+PODFILE CHECKSUM: 5b3a985a1adafce2daedead811fd56bfaf37461c
+
+COCOAPODS: 1.9.1

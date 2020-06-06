@@ -1,0 +1,17 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'FritzVisionVideoDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for FritzVisionVideoDemo
+  pod 'Fritz', '~> 5.3.7'
+  pod 'Fritz/VisionSegmentationModel/Hair/Fast'
+  pod 'Fritz/VisionSegmentationModel/People/Fast'
+  pod 'Fritz/VisionStyleModel/Paintings'
+  pod 'Fritz/VisionStyleModel/Patterns'
+  pod 'Fritz/VisionPoseModel/Human/Fast'
+  pod 'Fritz/VisionObjectModel/Fast'
+
+end

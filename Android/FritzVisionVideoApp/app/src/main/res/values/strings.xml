@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Video Processing</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+
+    <string name="starry_night_hair_title">Starry Night Hair</string>
+    <string name="starry_night_hair_description">Stylize your hair with Starry Night by Vincent van Gogh.</string>
+
+    <string name="stylize_background_title">Stylize Background</string>
+    <string name="stylize_background_description">Cut out people and paste them on top of a background stylized with Ritmo Plastico by Gino Severini.</string>
+
+    <string name="object_pose_title">Object Detection and Pose Estimation</string>
+    <string name="object_pose_description">Detect and draw boxes around objects while identifying and tracking the body position of a person.</string>
+
+    <string name="pose_double_mask_title">Pose Estimation with People and Hair Mask</string>
+    <string name="pose_double_mask_description">Identify and track the body position of a person while putting a mask over people and hair.</string>
+
+    <string name="mask_cut_title">People Mask with Original Hair</string>
+    <string name="mask_cut_description">Put a mask over people while retaining their original hair.</string>
+
+    <string name="video_path_key">video</string>
+    <string name="filter_strategy_key">strategy</string>
+
+</resources>

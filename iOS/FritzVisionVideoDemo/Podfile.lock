@@ -1,0 +1,71 @@
+PODS:
+  - Fritz (5.3.0):
+    - Fritz/Vision (= 5.3.0)
+  - Fritz/Vision (5.3.0):
+    - FritzBase/Vision (= 5.3.0)
+  - Fritz/VisionObjectModel/Fast (5.3.0):
+    - FritzVisionObjectModelFast (~> 5.3.0)
+  - Fritz/VisionPoseModel/Human/Fast (5.3.0):
+    - FritzVisionHumanPoseModelFast (~> 5.3.0)
+  - Fritz/VisionSegmentationModel/Hair/Fast (5.3.0):
+    - FritzVisionHairSegmentationModelFast (~> 5.3.0)
+  - Fritz/VisionSegmentationModel/People/Fast (5.3.0):
+    - FritzVisionPeopleSegmentationModelFast (~> 5.3.0)
+  - Fritz/VisionStyleModel/Paintings (5.3.0):
+    - FritzVisionStyleModelPaintings (~> 5.3.0)
+  - Fritz/VisionStyleModel/Patterns (5.3.0):
+    - FritzVisionStyleModelPatterns (~> 5.3.0)
+  - FritzBase/Core (5.3.0)
+  - FritzBase/CoreMLHelpers (5.3.0)
+  - FritzBase/ManagedModel (5.3.0):
+    - FritzBase/Core (= 5.3.0)
+  - FritzBase/Vision (5.3.0):
+    - FritzBase/Core (= 5.3.0)
+    - FritzBase/CoreMLHelpers (= 5.3.0)
+    - FritzBase/ManagedModel (= 5.3.0)
+  - FritzVisionHairSegmentationModelFast (5.3.0):
+    - FritzBase/Vision (~> 5.3.0)
+  - FritzVisionHumanPoseModelFast (5.3.0):
+    - FritzBase/Vision (~> 5.3.0)
+  - FritzVisionObjectModelFast (5.3.0):
+    - FritzBase/Vision (~> 5.3.0)
+  - FritzVisionPeopleSegmentationModelFast (5.3.0):
+    - FritzBase/Vision (~> 5.3.0)
+  - FritzVisionStyleModelPaintings (5.3.0):
+    - FritzBase/Vision (~> 5.3.0)
+  - FritzVisionStyleModelPatterns (5.3.0):
+    - FritzBase/Vision (~> 5.3.0)
+
+DEPENDENCIES:
+  - Fritz (~> 5.3.0)
+  - Fritz/VisionObjectModel/Fast
+  - Fritz/VisionPoseModel/Human/Fast
+  - Fritz/VisionSegmentationModel/Hair/Fast
+  - Fritz/VisionSegmentationModel/People/Fast
+  - Fritz/VisionStyleModel/Paintings
+  - Fritz/VisionStyleModel/Patterns
+
+SPEC REPOS:
+  trunk:
+    - Fritz
+    - FritzBase
+    - FritzVisionHairSegmentationModelFast
+    - FritzVisionHumanPoseModelFast
+    - FritzVisionObjectModelFast
+    - FritzVisionPeopleSegmentationModelFast
+    - FritzVisionStyleModelPaintings
+    - FritzVisionStyleModelPatterns
+
+SPEC CHECKSUMS:
+  Fritz: 9f13fccd5bc7fc08a64d8bf79764c221e9d38cfe
+  FritzBase: aedffaeb45d5c09ccf66d7d4ad4e8d578072c3de
+  FritzVisionHairSegmentationModelFast: c24e43b826312c8c18f2e94be598f9fe008f0efc
+  FritzVisionHumanPoseModelFast: e629ea585967bd327e337245d38573a5ad0033af
+  FritzVisionObjectModelFast: 98ef876b4fb55359dcff6125b35af44a9fdd3633
+  FritzVisionPeopleSegmentationModelFast: 526ae84d3e04604aab24edd5e9ee6659ab69566a
+  FritzVisionStyleModelPaintings: 632d179c92b842031d3651afcfa6928500b3f66a
+  FritzVisionStyleModelPatterns: f57c0ba3b97a1a56aee42261798010641495ea29
+
+PODFILE CHECKSUM: 68e6d31329f9180fa5dd7afb6598fa286797ce0a
+
+COCOAPODS: 1.9.1
