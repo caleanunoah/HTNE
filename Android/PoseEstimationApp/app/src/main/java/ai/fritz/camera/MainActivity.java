@@ -27,6 +27,7 @@ import ai.fritz.vision.poseestimation.HumanSkeleton;
 import ai.fritz.vision.poseestimation.Pose;
 import ai.fritz.vision.poseestimation.PoseOnDeviceModel;
 
+// testing testing testing
 
 public class MainActivity extends BaseCameraActivity implements ImageReader.OnImageAvailableListener {
 
@@ -217,7 +218,7 @@ public class MainActivity extends BaseCameraActivity implements ImageReader.OnIm
         image.close();
 
         runInBackground(() -> {
-            poseResult = predictor.predict(visionImage);
+            poseResult = predictor.predict(visionImage); // this returns a pose result with method List<Pose>
             requestRender();
         });
     }
