@@ -1,5 +1,14 @@
-# Fritz Examples
+# HOW TO RUN ME
+# NOTE To support open development and further projec integration the code for this project can be found by downloading this repo and opening the PoseEstimation Example
 
+1. Clone the repo
+2. In Android Studios, Open project in directory: Android > PoseEstimationApp > app
+3. In Android Studio, Click Run > RunApp with Android device connected (Enable debugger on Android mobile devices)
+
+# NOTE To support open development and further projec integration the code for this project can be found by downloading this repo and opening the PoseEstimation Example
+
+
+# API FRITZING. PLEASE SEE THE DOCUMENTATION.
 [![Twitter](https://img.shields.io/badge/twitter-@fritzlabs-blue.svg?style=flat)](http://twitter.com/fritzlabs)
 
 Fritz AI is the machine learning platform for iOS and Android developers. Teach your mobile apps to see, hear, sense, and think. Explore our [pre-trained APIs](https://www.fritz.ai/product/pretrained.html?utm_source=github&utm_campaign=fritz-examples) to get started quickly, or check out [Fritz AI Studio](https://www.fritz.ai/product/studio.html?utm_source=github&utm_campaign=fritz-examples) to build and deploy custom models.
