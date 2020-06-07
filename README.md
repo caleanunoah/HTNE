@@ -1,10 +1,10 @@
-# HOW TO RUN ME
+## HOW TO OPEN/RUN ME
 
-# NOTE To support open development and further project integration, the code for this project can be found by downloading this repo and opening the PoseEstimation Example
+To support open development and further project integration, the code for this project can be found by downloading this repo and opening the PoseEstimation Example
 
-1. Clone the repo
-2. In Android Studios 4.0 or greater, Open project in directory: Android > PoseEstimationApp > app
-3. In Android Studio, Click Run > RunApp with Android device connected (Enable debugger on Android mobile devices)
+# 1. Clone the repo
+# 2. In Android Studios 4.0 or greater, Open project in directory: Android > PoseEstimationApp > app
+# 3. In Android Studio, Click Run > RunApp with Android device connected (Enable debugger on Android mobile devices)
 
 # Additional Resources
 
