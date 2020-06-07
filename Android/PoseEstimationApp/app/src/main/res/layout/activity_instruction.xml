@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InstructionActivity"
+
+    >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="434dp"
+        android:layout_height="77dp"
+        android:gravity="center"
+        android:text="INSTRUCTIONS"
+        android:textSize="90px"
+        android:textColor="#fff"
+        android:background="#6200EE"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="81dp" />
+
+    <TextView
+
+        android:id="@+id/textView3"
+        android:layout_width="402dp"
+        android:layout_height="507dp"
+        android:layout_gravity="center"
+        android:layout_margin="10px"
+        android:layout_marginBottom="20px"
+        android:background="#3700B3"
+        android:gravity="center"
+        android:text="Quarantoned wants to help you watch your form as you perform a simple shoulder press.  Align your arms with the grey outline, and if the form is correct it will turn green and the next sequence will be shown.  Please note Quarantoned is not a substitute for professional advice or training. By clicking on Button you agree to use Quarantoned at your own risk. User discretion is strongly advised. "
+        android:textColor="#fff"
+        android:textSize="40px"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="59dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#03DAC5"
+        android:gravity="center"
+
+        android:onClick="fun2"
+        android:text="Start Training"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="576dp" />
+</LinearLayout>

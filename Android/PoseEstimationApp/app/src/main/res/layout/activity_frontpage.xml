@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frontpage"
+    android:orientation="vertical
+">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="292dp"
+        android:layout_height="185dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35px"
+        android:onClick="fun"
+        android:text="Click To Launch"
+        android:textSize="50px"
+        android:background="#03DAC5"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="629dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="290dp"
+        android:layout_height="386dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10px"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="384dp"
+        android:layout_height="94dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="QuaranToned"
+        android:textColor="#6200EE"
+        android:textSize="90px"
+        android:typeface="serif"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="361dp" />
+
+</LinearLayout>
