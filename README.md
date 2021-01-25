@@ -2,8 +2,9 @@
 We built a mobile application in Android Studios for the hackathon Hack the Northeast. The app guides a user through a series of exercises so they can do exercises safely in quarantine. [Check out a demo video](https://youtu.be/r32jermgXcA?t=65). Let's get quarantoned!
 
 ## Technology Used
-- Java 
-- Android Studios
+- OOP Java 
+- Android Studios for Mobile Development 
+- TensorFlow for computer vision ML training
 
 ## How to Use
 To support open development and further project integration, the code for this project can be found by downloading this repo and opening the PoseEstimation Example
